@@ -6,5 +6,5 @@ dest_folder = os.getenv("MAKEFUN_OUTPUT_DIR", "/output")
 if not os.path.exists(dest_folder):
     os.makedirs(dest_folder)
 # Copy entry.png into destination folder
-shutil.copy2("entry.png", dest_folder + "/entry.png")
+shutil.copy2(os.path.join(os.path.dirname(os.path.abspath(__file__)), "entry.png"), dest_folder + "/entry.png")
 print(f"Poster copied to {dest_folder}/entry.png")
