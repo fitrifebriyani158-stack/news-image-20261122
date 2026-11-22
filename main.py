@@ -7,4 +7,4 @@ if not os.path.exists(dest_folder):
     os.makedirs(dest_folder)
 # Copy entry.png into destination folder
 shutil.copy2("entry.png", dest_folder + "/entry.png")
-print(f"Copied entry.png to {dest_folder}")
+print(f"Poster copied to {dest_folder}/entry.png")
